@@ -20,5 +20,6 @@ jobs:
 
     - name: Build
       run: |
+        go mod tidy
         go mod init github.com/tkeber/fritzbox_exporter
         go build -v
