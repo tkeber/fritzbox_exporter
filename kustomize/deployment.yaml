@@ -17,4 +17,7 @@ spec:
           image: tkeber/fritzbox_exporter:0.1.0
           imagePullPolicy: IfNotPresent
           name: fritzbox-exporter
+          ports:
+          - containerPort: 9042
+            name: metrics
       tolerations: []
